@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FORMULARIO</title>
+</head>
+<body>
+    <h1 
+        id="tituloCabecera"
+        style="text-align: center;"  
+    >
+        FORMULARIO BÁSICO
+    </h1>
+    
+    <br/>
+    <label for="nombre">
+        NOMBRE<span>: </span>
+    </label>
+    <input 
+        type="text" 
+        id="nombre" 
+        name="nombre"   
+    >
+    <br/>
+    <br/>
+    <label for="apellido">
+        APELLIDO <span>: </span>
+    </label>
+    <input 
+        type="text" 
+        id="apellido" 
+        name="apellido"  
+    >
+    <br/>
+    <!-- <img id="imagen" src="http://globalmentoring.com.mx/imagenes/javascript.png"> -->
+    <script>
+        document.getElementById("nombre").addEventListener("focus", mostrar);
+        document.getElementById("nombre").addEventListener("blur", entrar);
+        function mostrar(event){
+            let componente = event.target;
+            componente.style.background = "yellow"
+            //document.getElementById("tituloCabezera").style.color = "blue"
+            //document.getElementById("tituloCabezera").innerHTML += "<br/> HOLA :3";
+            //document.getElementById("imagen").src = "http://globalmentoring.com.mx/imagenes/html5.png"
+            //document.write("ay nos vidrios maistro");
+        }
+        
+
+        function entrar(event){
+            let componente = event.target;
+            componente.style.background = "white"
+           // alert("KMARA MAISTRO; SI SUPISTES ENTRAR");
+            // let texto = "";
+            // if (navigator.cookieEnabled) {
+            //     texto = "Cookies habilitadas";
+
+            // }else{
+            //     texto = "Cookies deshabilitadas";
+
+            // }
+            // document.getElementById("mostrarDiv").innerHTML = texto;
+        }
+        
+    </script>
+</body>
+</html>

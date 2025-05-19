@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FORMULARIO</title>
+</head>
+
+<body>
+    <h1 id="tituloCabecera" style="text-align: center;">
+        FORMULARIO BÁSICO
+    </h1>
+
+    <br />
+    <form id="formulario" name="formulario">
+        <label for="nombre">
+            NOMBRE<span>: </span>
+        </label>
+        <input type="text" id="nombre" name="nombre">
+        <br />
+        <br />
+        <label for="apellido">
+            APELLIDO <span>: </span>
+        </label>
+        <input type="text" id="apellido" name="apellido">
+    </form>
+
+    <script>
+        const formulario = document.getElementById("formulario");
+        
+        formulario.addEventListener("focus", (event) =>{
+            event.target.style.background = "red";
+        }, true)
+
+        formulario.addEventListener("blur", (event) =>{
+            event.target.style.background = "pink";
+        }, true)
+
+        // document.getElementById("nombre").addEventListener("focus", (event) => {
+        //     event.target.style.background = "red";
+        // });
+        // document.getElementById("nombre").addEventListener("blur", (event) => {
+        //     event.target.style.background = "pink";
+        // });
+
+        // document.getElementById("apellido").addEventListener("focus", mostrar);
+        // document.getElementById("apellido").addEventListener("blur", entrar);
+
+        // function mostrar(event) {
+        //     let componente = event.target;
+        //     componente.style.background = "yellow"
+        // }
+
+
+        // function entrar(event) {
+        //     let componente = event.target;
+        //     componente.style.background = "white"
+        // }
+
+    </script>
+</body>
+
+</html>
